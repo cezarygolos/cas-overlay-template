@@ -4,17 +4,17 @@ buildscript {
         gradlePluginPortal()
         mavenCentral()
         jcenter()
-        maven { 
+        maven2 { 
             url "http://repo.spring.io/libs-milestone" 
             allowInsecureProtocol = true
             mavenContent { releasesOnly() }
         }
-        maven { 
+        maven2 { 
             url "http://repo.spring.io/libs-snapshot" 
             allowInsecureProtocol = true
             mavenContent { snapshotsOnly() }
         }
-        maven { 
+        maven2 { 
             url "http://plugins.gradle.org/m2/" 
             allowInsecureProtocol = true
             mavenContent { releasesOnly() }
@@ -33,27 +33,27 @@ repositories {
     mavenLocal()
     mavenCentral()
     jcenter()
-    maven { 
+    maven2 { 
         url "http://oss.sonatype.org/content/repositories/snapshots" 
         allowInsecureProtocol = true
         mavenContent { snapshotsOnly() }
     }
-    maven { 
+    maven2 { 
         mavenContent { releasesOnly() }
         url "http://build.shibboleth.net/nexus/content/repositories/releases/"
         allowInsecureProtocol = true
     }
-    maven { 
+    maven2 { 
         mavenContent { releasesOnly() }
         url "http://repo.spring.io/milestone/" 
         allowInsecureProtocol = true
     }
-    maven { 
+    maven2 { 
         url "http://repo.spring.io/snapshot/" 
         allowInsecureProtocol = true
         mavenContent { snapshotsOnly() }
     }
-    maven { 
+    maven2 { 
         mavenContent { snapshotsOnly() }
         url "http://oss.jfrog.org/artifactory/oss-snapshot-local"
         allowInsecureProtocol = true
