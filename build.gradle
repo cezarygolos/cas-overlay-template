@@ -77,7 +77,7 @@ apply plugin: "idea"
 apply from: rootProject.file("gradle/springboot.gradle")
 apply from: rootProject.file("gradle/dockerjib.gradle")
 
-System.setProperty('javax.net.ssl.trustStore', 'cacerts')
+System.setProperty('javax.net.ssl.trustStore', '/opt/java/openjdk/lib/security/cacerts')
 System.setProperty('javax.net.ssl.trustStorePassword', 'changeit')
 
 dependencies {
