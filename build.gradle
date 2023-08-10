@@ -5,15 +5,15 @@ buildscript {
         mavenCentral()
         jcenter()
         maven { 
-            url "https://repo.spring.io/libs-milestone" 
+            url "http://repo.spring.io/libs-milestone" 
             mavenContent { releasesOnly() }
         }
         maven { 
-            url "https://repo.spring.io/libs-snapshot" 
+            url "http://repo.spring.io/libs-snapshot" 
             mavenContent { snapshotsOnly() }
         }
         maven { 
-            url "https://plugins.gradle.org/m2/" 
+            url "http://plugins.gradle.org/m2/" 
             mavenContent { releasesOnly() }
         }
     }
@@ -31,24 +31,24 @@ repositories {
     mavenCentral()
     jcenter()
     maven { 
-        url "https://oss.sonatype.org/content/repositories/snapshots" 
+        url "http://oss.sonatype.org/content/repositories/snapshots" 
         mavenContent { snapshotsOnly() }
     }
     maven { 
         mavenContent { releasesOnly() }
-        url "https://build.shibboleth.net/nexus/content/repositories/releases/" 
+        url "http://build.shibboleth.net/nexus/content/repositories/releases/" 
     }
     maven { 
         mavenContent { releasesOnly() }
-        url "https://repo.spring.io/milestone/" 
+        url "http://repo.spring.io/milestone/" 
     }
     maven { 
-        url "https://repo.spring.io/snapshot/" 
+        url "http://repo.spring.io/snapshot/" 
         mavenContent { snapshotsOnly() }
     }
     maven { 
         mavenContent { snapshotsOnly() }
-        url "https://oss.jfrog.org/artifactory/oss-snapshot-local" 
+        url "http://oss.jfrog.org/artifactory/oss-snapshot-local" 
     }
 }
 
